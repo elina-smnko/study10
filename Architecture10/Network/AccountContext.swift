@@ -35,6 +35,8 @@ class AccountContext {
                     completion(.failure(.dataError))
                     return
                 }
+//                UserDefaults.standard.set(account, forKey: self.dataKey)
+//                UserDefaults.standard.set(true, forKey: self.loggedKey)
                 completion(.success(account))
             }catch{
                 completion(.failure(.dataError))

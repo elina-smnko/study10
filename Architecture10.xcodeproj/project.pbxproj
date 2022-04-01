@@ -9,39 +9,46 @@
 /* Begin PBXBuildFile section */
 		04869F0527EB710800FF729D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04869F0427EB710800FF729D /* AppDelegate.swift */; };
 		04869F0727EB710800FF729D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04869F0627EB710800FF729D /* SceneDelegate.swift */; };
-		04869F0927EB710800FF729D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04869F0827EB710800FF729D /* ViewController.swift */; };
 		04869F0C27EB710800FF729D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04869F0A27EB710800FF729D /* Main.storyboard */; };
 		04869F0E27EB710C00FF729D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04869F0D27EB710C00FF729D /* Assets.xcassets */; };
 		04869F1127EB710C00FF729D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04869F0F27EB710C00FF729D /* LaunchScreen.storyboard */; };
-		04869F1C27EB763C00FF729D /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04869F1B27EB763C00FF729D /* LoginCoordinator.swift */; };
+		04869F1C27EB763C00FF729D /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04869F1B27EB763C00FF729D /* LoginRouter.swift */; };
 		04869F1E27EB764800FF729D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04869F1D27EB764800FF729D /* LoginViewModel.swift */; };
 		04869F2027EB765800FF729D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04869F1F27EB765800FF729D /* LoginViewController.swift */; };
 		04869F2327EB7AC600FF729D /* StoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04869F2227EB7AC600FF729D /* StoryboardInitializable.swift */; };
-		04869F2627EBA25E00FF729D /* AccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04869F2527EBA25E00FF729D /* AccountCoordinator.swift */; };
+		04869F2627EBA25E00FF729D /* AccountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04869F2527EBA25E00FF729D /* AccountRouter.swift */; };
 		04869F2827EBA26600FF729D /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04869F2727EBA26600FF729D /* AccountViewModel.swift */; };
 		04869F2A27EBA27000FF729D /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04869F2927EBA27000FF729D /* AccountViewController.swift */; };
 		04869F2E27EBA7C000FF729D /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04869F2D27EBA7C000FF729D /* Account.swift */; };
 		04869F3927EC96A400FF729D /* AccountContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04869F3827EC96A400FF729D /* AccountContext.swift */; };
+		04869F5327F5E93200FF729D /* KeychainInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04869F5227F5E93200FF729D /* KeychainInterface.swift */; };
+		04869F5827F5F5B100FF729D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04869F5A27F5F5B100FF729D /* Localizable.strings */; };
+		04869F5E27F5F87500FF729D /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04869F5D27F5F87500FF729D /* Styles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04869F0127EB710800FF729D /* Architecture10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Architecture10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04869F0427EB710800FF729D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04869F0627EB710800FF729D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04869F0827EB710800FF729D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04869F0B27EB710800FF729D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04869F0D27EB710C00FF729D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04869F1027EB710C00FF729D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04869F1227EB710C00FF729D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04869F1B27EB763C00FF729D /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		04869F1B27EB763C00FF729D /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		04869F1D27EB764800FF729D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		04869F1F27EB765800FF729D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		04869F2227EB7AC600FF729D /* StoryboardInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInitializable.swift; sourceTree = "<group>"; };
-		04869F2527EBA25E00FF729D /* AccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCoordinator.swift; sourceTree = "<group>"; };
+		04869F2527EBA25E00FF729D /* AccountRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRouter.swift; sourceTree = "<group>"; };
 		04869F2727EBA26600FF729D /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		04869F2927EBA27000FF729D /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		04869F2D27EBA7C000FF729D /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		04869F3827EC96A400FF729D /* AccountContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountContext.swift; sourceTree = "<group>"; };
+		04869F5227F5E93200FF729D /* KeychainInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainInterface.swift; sourceTree = "<group>"; };
+		04869F5427F5F57600FF729D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		04869F5527F5F57600FF729D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		04869F5927F5F5B100FF729D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		04869F5B27F5F5C400FF729D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		04869F5D27F5F87500FF729D /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,16 +81,18 @@
 		04869F0327EB710800FF729D /* Architecture10 */ = {
 			isa = PBXGroup;
 			children = (
+				04869F5C27F5F86A00FF729D /* Design */,
+				04869F4F27F5E6F800FF729D /* KeyChain */,
 				04869F2C27EBA7B500FF729D /* Model */,
 				04869F2B27EBA70A00FF729D /* Network */,
 				04869F2127EB7A7D00FF729D /* Utilities */,
 				04869F1927EB762400FF729D /* Scenes */,
 				04869F1827EB73C700FF729D /* Delegate */,
-				04869F0827EB710800FF729D /* ViewController.swift */,
 				04869F0A27EB710800FF729D /* Main.storyboard */,
 				04869F0D27EB710C00FF729D /* Assets.xcassets */,
 				04869F0F27EB710C00FF729D /* LaunchScreen.storyboard */,
 				04869F1227EB710C00FF729D /* Info.plist */,
+				04869F5A27F5F5B100FF729D /* Localizable.strings */,
 			);
 			path = Architecture10;
 			sourceTree = "<group>";
@@ -109,7 +118,7 @@
 		04869F1A27EB762B00FF729D /* LoginScreen */ = {
 			isa = PBXGroup;
 			children = (
-				04869F1B27EB763C00FF729D /* LoginCoordinator.swift */,
+				04869F1B27EB763C00FF729D /* LoginRouter.swift */,
 				04869F1D27EB764800FF729D /* LoginViewModel.swift */,
 				04869F1F27EB765800FF729D /* LoginViewController.swift */,
 			);
@@ -127,7 +136,7 @@
 		04869F2427EB9CAE00FF729D /* AccountScreen */ = {
 			isa = PBXGroup;
 			children = (
-				04869F2527EBA25E00FF729D /* AccountCoordinator.swift */,
+				04869F2527EBA25E00FF729D /* AccountRouter.swift */,
 				04869F2727EBA26600FF729D /* AccountViewModel.swift */,
 				04869F2927EBA27000FF729D /* AccountViewController.swift */,
 			);
@@ -148,6 +157,22 @@
 				04869F2D27EBA7C000FF729D /* Account.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		04869F4F27F5E6F800FF729D /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				04869F5227F5E93200FF729D /* KeychainInterface.swift */,
+			);
+			path = KeyChain;
+			sourceTree = "<group>";
+		};
+		04869F5C27F5F86A00FF729D /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				04869F5D27F5F87500FF729D /* Styles.swift */,
+			);
+			path = Design;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +217,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 04869EF827EB710800FF729D;
 			productRefGroup = 04869F0227EB710800FF729D /* Products */;
@@ -209,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04869F1127EB710C00FF729D /* LaunchScreen.storyboard in Resources */,
+				04869F5827F5F5B100FF729D /* Localizable.strings in Resources */,
 				04869F0E27EB710C00FF729D /* Assets.xcassets in Resources */,
 				04869F0C27EB710800FF729D /* Main.storyboard in Resources */,
 			);
@@ -223,14 +250,15 @@
 			files = (
 				04869F2327EB7AC600FF729D /* StoryboardInitializable.swift in Sources */,
 				04869F3927EC96A400FF729D /* AccountContext.swift in Sources */,
+				04869F5E27F5F87500FF729D /* Styles.swift in Sources */,
 				04869F2E27EBA7C000FF729D /* Account.swift in Sources */,
+				04869F5327F5E93200FF729D /* KeychainInterface.swift in Sources */,
 				04869F2027EB765800FF729D /* LoginViewController.swift in Sources */,
-				04869F0927EB710800FF729D /* ViewController.swift in Sources */,
 				04869F0527EB710800FF729D /* AppDelegate.swift in Sources */,
 				04869F2827EBA26600FF729D /* AccountViewModel.swift in Sources */,
-				04869F2627EBA25E00FF729D /* AccountCoordinator.swift in Sources */,
+				04869F2627EBA25E00FF729D /* AccountRouter.swift in Sources */,
 				04869F2A27EBA27000FF729D /* AccountViewController.swift in Sources */,
-				04869F1C27EB763C00FF729D /* LoginCoordinator.swift in Sources */,
+				04869F1C27EB763C00FF729D /* LoginRouter.swift in Sources */,
 				04869F1E27EB764800FF729D /* LoginViewModel.swift in Sources */,
 				04869F0727EB710800FF729D /* SceneDelegate.swift in Sources */,
 			);
@@ -243,6 +271,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				04869F0B27EB710800FF729D /* Base */,
+				04869F5427F5F57600FF729D /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -251,8 +280,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				04869F1027EB710C00FF729D /* Base */,
+				04869F5527F5F57600FF729D /* de */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		04869F5A27F5F5B100FF729D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04869F5927F5F5B100FF729D /* en */,
+				04869F5B27F5F5C400FF729D /* de */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -262,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -323,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

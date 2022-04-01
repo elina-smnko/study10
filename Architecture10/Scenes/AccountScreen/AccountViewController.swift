@@ -11,9 +11,11 @@ class AccountViewController: UIViewController, StoryboardInitializable {
     var viewModel: AccountViewModel!
 
     @IBOutlet weak private var textView: UITextView!
+    @IBOutlet weak private var logoutButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
         showUser()
     }
     
@@ -30,5 +32,9 @@ Cell: \(user.cell ?? "")
     
     @IBAction func logout(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    private func setupUI() {
+        logoutButton.setTitle(NSLocalizedString("logout", comment: ""), for: .normal)
     }
 }

@@ -19,13 +19,12 @@ enum KeychainError: Error {
 }
 
 final class LoginViewModel {
-    private var coordinator: LoginCoordinator!
-    static let server = "www.example.com"
+    private var coordinator: LoginRouter!
     
     private let dataKey = "dataKey"
     private let loggedKey = "loggedKey"
     
-    init(coordinator: LoginCoordinator) {
+    init(coordinator: LoginRouter) {
         self.coordinator = coordinator
     }
     
@@ -37,8 +36,6 @@ final class LoginViewModel {
             case let .success(user):
                 DispatchQueue.main.async {
                     self.presentAccount(user)
-                    UserDefaults.standard.set(user, forKey: self.dataKey)
-                    UserDefaults.standard.set(true, forKey: self.loggedKey)
                 }
             case let .failure(error):
                 print(error.localizedDescription)
@@ -65,14 +62,7 @@ final class LoginViewModel {
     }
     
     private func save(credentials: Credentials) throws {
-        let account = credentials.email
-        let password = credentials.password.data(using: String.Encoding.utf8)!
-        let query: [String: Any] = [kSecClass as String: kSecClassInternetPassword,
-                                    kSecAttrAccount as String: account,
-                                    kSecAttrServer as String: LoginViewModel.server,
-                                    kSecValueData as String: password]
-        let status = SecItemAdd(query as CFDictionary, nil)
-        guard status == errSecSuccess else { throw KeychainError.unhandledError(status: status) }
-        
+        guard let password = credentials.password.data(using: String.Encoding.utf8) else { return }
+        try KeychainInterface.save(password: password, service: KeychainInterface.service, account: credentials.email)
     }
 }

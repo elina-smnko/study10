@@ -8,10 +8,10 @@
 import Foundation
 
 final class AccountViewModel {
-    private var coordinator: AccountCoordinator!
+    private var coordinator: AccountRouter!
     var user: Account?
     
-    init(coordinator: AccountCoordinator) {
+    init(coordinator: AccountRouter) {
         self.coordinator = coordinator
     }
 }
